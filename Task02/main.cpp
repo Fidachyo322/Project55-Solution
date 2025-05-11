@@ -3,7 +3,13 @@
 using namespace std;
 
 int fibonacci(int index) {
-	if (index == 1 || index == 2)
+
+	if (index <= 0)
+	{
+		return -1;
+	}
+
+	if (index <= 2)
 	{
 		return index - 1;
 	}
